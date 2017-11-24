@@ -574,22 +574,23 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.site-content {
-  margin: 4.5rem 175px 1.5rem;
-  position: relative; }
-  .site-content:before, .site-content:after {
-    color: #00cc00;
-    font-family: 'FontAwesome';
-    font-size: 125px;
-    line-height: 125px;
-    position: absolute;
-    top: 0; }
-  .site-content:before {
-    content: '\f10d';
-    left: -175px; }
-  .site-content:after {
-    content: '\f10e';
-    right: -175px; }
+@media (min-width: 600px) {
+  .site-content {
+    margin: 4.5rem 175px 1.5rem;
+    position: relative; }
+    .site-content:before, .site-content:after {
+      color: #00cc00;
+      font-family: 'FontAwesome';
+      font-size: 125px;
+      line-height: 125px;
+      position: absolute;
+      top: 0; }
+    .site-content:before {
+      content: '\f10d';
+      left: -175px; }
+    .site-content:after {
+      content: '\f10e';
+      right: -175px; } }
 
 /* Posts and pages */
 .sticky {
@@ -623,8 +624,9 @@ a {
           justify-content: center;
   margin-top: 2.5rem; }
 
-.archive .entry-content p, .blog .entry-content p, .single .entry-content p {
-  font-size: 2.5rem; }
+@media (min-width: 600px) {
+  .archive .entry-content p, .blog .entry-content p, .single .entry-content p {
+    font-size: 2.5rem; } }
 
 .hfeed.site {
   margin: 0 auto;
@@ -655,6 +657,9 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+.archive .hentry {
+  border-bottom: 1px dotted #fff; }
 
 /*--------------------------------------------------------------
 # Media
