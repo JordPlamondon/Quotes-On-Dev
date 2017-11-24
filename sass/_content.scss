@@ -1,12 +1,30 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.site-content {
+margin: ($base__space-unit * 3) 175px $base__space-unit;
+position: relative;
+
+	&:before,
+	&:after {
+		color: $color__brand-green;
+		font-family: 'FontAwesome';
+		font-size: 125px;
+		line-height: 125px;
+		position: absolute;
+		top: 0;
+	}
+	&:before {
+		content: '\f10d';
+		left: -175px;
+	}	
+	&:after {
+		content: '\f10e';
+		right: -175px;
+	}
+}
 
 /* Posts and pages */
-body {
-	background: url('wp-content/themes/project-05 2/assets/qod-logo.svg');
-	background-color: #222222;
-}
 
 .sticky {
 	display: block;
@@ -36,3 +54,10 @@ body {
 	margin: 0 0 $base__space-unit;
 }
 
+.quote-button {
+	display: flex;
+	justify-content: center;
+}
+.archive .entry-content p, .blog .entry-content p, .single .entry-content p {
+	font-size: 2.5rem;
+}

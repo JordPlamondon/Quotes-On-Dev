@@ -23,19 +23,15 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<div class="logo">
-						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-
+						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+						</h1>
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							<img src="<?php echo get_template_directory_uri() . '/../project-05/assets/qod-logo.svg'?>" class="logo" alt="Quotes on Dev logo" />
 						</a>
 					</div>
-				
 				</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
+			
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

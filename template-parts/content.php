@@ -36,7 +36,8 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 	</div>
 
 </article><!-- #post-## -->
-
-<?php if( is_home() || is_single() ): ?>
+<div class="quote-button">
+	<?php if( is_home() || is_single() ): ?>
 	<button type="button" id="new-quote-button">Show Me Another!</button>
-<?php endif; ?>
+	<?php endif; ?>
+</div>	

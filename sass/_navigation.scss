@@ -122,6 +122,9 @@ a {
 	.nav-previous {
 		float: left;
 		width: 50%;
+		a {
+			display: none;
+		}
 	}
 
 	.nav-next {
@@ -129,4 +132,8 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+.site-info {
+	display: flex;
+	justify-content: flex-end;
 }
