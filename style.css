@@ -39,7 +39,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## All Archives Page
 	## Submit a Quote Page
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Exo:100,100i,200,200i");
+@import url("https://fonts.googleapis.com/css?family=Exo:100,100i,200,200i,300,500");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -405,7 +405,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #00cc00; }
+  color: #00cc00;
+  text-decoration: none; }
   a:visited {
     color: #00cc00; }
   a:hover, a:focus, a:active {
@@ -631,10 +632,13 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin-left: -3rem; }
   .browse-archives ul li {
     list-style-type: none;
-    margin: 0.5rem; }
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 0.4rem; }
   .browse-archives ul a {
     text-decoration: none; }
 
