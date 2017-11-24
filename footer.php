@@ -11,7 +11,7 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<ul class="footer-navigation clearfix">
+					<ul class="footer-navigation">
 						<?php wp_list_pages('title_li='); ?>
 						<li>Brought to you by <a href="http://www.redacademy.com/">RED Academy</a></li>
 					</ul>

@@ -134,6 +134,20 @@ a {
 	}
 }
 .site-info {
-	display: flex;
-	justify-content: flex-end;
+	ul {
+		display: flex;
+    flex-flow: row wrap;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		list-style-type: none;
+		margin-top: 5rem;
+		li {
+			border-right: 1px solid #fff;
+			line-height: 1rem;
+			padding: 0 1rem;
+		}
+		a {
+		text-decoration: none;
+		}
+	}
 }

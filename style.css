@@ -39,6 +39,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## All Archives Page
 	## Submit a Quote Page
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Exo:100,100i,200,200i");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -221,34 +222,6 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-@font-face {
-  font-family: 'Exo Web';
-  src: url("../../fonts/exo-light-webfont.eot");
-  src: url("../../fonts/exo-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/exo-light-webfont.woff2") format("woff2"), url("../../fonts/exo-light-webfont.woff") format("woff"), url("../../fonts/exo-light-webfont.ttf") format("truetype"), url("../../fonts/exo-light-webfont.svg#exolight") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Exo Web';
-  src: url("../../fonts/exo-lightitalic-webfont.eot");
-  src: url("../../fonts/exo-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/exo-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/exo-lightitalic-webfont.woff") format("woff"), url("../../fonts/exo-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/exo-lightitalic-webfont.svg#exolightitalic") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Exo Web';
-  src: url("../../fonts/exo-medium-webfont.eot");
-  src: url("../../fonts/exo-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/exo-medium-webfont.woff2") format("woff2"), url("../../fonts/exo-medium-webfont.woff") format("woff"), url("../../fonts/exo-medium-webfont.ttf") format("truetype"), url("../../fonts/exo-medium-webfont.svg#exomedium") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Exo Web';
-  src: url("../../fonts/exo-mediumitalic-webfont.eot");
-  src: url("../../fonts/exo-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/exo-mediumitalic-webfont.woff2") format("woff2"), url("../../fonts/exo-mediumitalic-webfont.woff") format("woff"), url("../../fonts/exo-mediumitalic-webfont.ttf") format("truetype"), url("../../fonts/exo-mediumitalic-webfont.svg#exomediumitalic") format("svg");
-  font-weight: bold;
-  font-style: italic; }
-
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -260,7 +233,13 @@ textarea {
   color: #fff;
   font-family: sans-serif;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-family: Exo, sans-serif;
+  font-weight: 200; }
+
+h2 {
+  font-style: italic;
+  font-size: 1.2rem; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -389,8 +368,8 @@ input[type="submit"] {
   input[type="submit"]:hover,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #006600;
-    color: #006600; }
+    border-color: #009900;
+    color: #009900; }
 
 /* Fields */
 input[type="text"],
@@ -430,7 +409,7 @@ a {
   a:visited {
     color: #00cc00; }
   a:hover, a:focus, a:active {
-    color: #006600; }
+    color: #009900; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -507,13 +486,27 @@ a {
   text-align: right;
   width: 50%; }
 
-.site-info {
+.site-info ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  list-style-type: none;
+  margin-top: 5rem; }
+  .site-info ul li {
+    border-right: 1px solid #fff;
+    line-height: 1rem;
+    padding: 0 1rem; }
+  .site-info ul a {
+    text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -621,10 +614,17 @@ a {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-top: 3rem; }
 
 .archive .entry-content p, .blog .entry-content p, .single .entry-content p {
   font-size: 2.5rem; }
+
+.hfeed.site {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 2.5%;
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Media

@@ -7,7 +7,7 @@ get_header(); ?>
     <?php the_title('<h1 class="entry-title>"', '</h1>'); ?>
     </header>
     
-      <?php if( is_user_logged_in() && current_user_can('edit_posts' ) ): ?>
+    <?php if( is_user_logged_in() && current_user_can('edit_posts' ) ): ?>
     <div class="quotes-submission-wrapper">
     <form name="quoteForm" id="quote-submission-form" >
       <div>
