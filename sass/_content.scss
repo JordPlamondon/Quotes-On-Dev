@@ -57,7 +57,7 @@ position: relative;
 .quote-button {
 	display: flex;
 	justify-content: center;
-	margin-top: 3rem;
+	margin-top: 2.5rem;
 }
 .archive .entry-content p, .blog .entry-content p, .single .entry-content p {
 	font-size: 2.5rem;
@@ -69,3 +69,16 @@ position: relative;
 	padding: 2.5%;
 	width: 100%;
 }
+.browse-archives {
+	ul{
+		display: flex;
+		flex-wrap: wrap;
+		li {
+		list-style-type: none;
+		margin: 0.5rem;
+		}
+		a {
+		text-decoration: none;
+		}
+	}
+}	

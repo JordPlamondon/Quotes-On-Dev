@@ -615,7 +615,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 3rem; }
+  margin-top: 2.5rem; }
 
 .archive .entry-content p, .blog .entry-content p, .single .entry-content p {
   font-size: 2.5rem; }
@@ -625,6 +625,18 @@ a {
   max-width: 1080px;
   padding: 2.5%;
   width: 100%; }
+
+.browse-archives ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .browse-archives ul li {
+    list-style-type: none;
+    margin: 0.5rem; }
+  .browse-archives ul a {
+    text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Media
