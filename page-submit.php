@@ -39,3 +39,5 @@ get_header(); ?>
   </section>
 </main>
 </div>
+
+<?php get_footer(); ?>
