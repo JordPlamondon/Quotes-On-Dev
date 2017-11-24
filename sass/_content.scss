@@ -3,6 +3,10 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
+body {
+	background: url('wp-content/themes/project-05 2/assets/qod-logo.svg');
+	background-color: #222222;
+}
 
 .sticky {
 	display: block;
@@ -31,3 +35,4 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+

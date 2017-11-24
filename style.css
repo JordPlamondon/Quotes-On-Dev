@@ -545,6 +545,10 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+body {
+  background: url("wp-content/themes/project-05 2/assets/qod-logo.svg");
+  background-color: #222222; }
+
 .sticky {
   display: block; }
 
