@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@media (min-width: 600px) {
+@include tablet {
 .site-content {
 margin: ($base__space-unit * 3) 175px $base__space-unit; 
 position: relative;
@@ -60,7 +60,8 @@ position: relative;
 	justify-content: center;
 	margin-top: 2.5rem;
 }
-@media (min-width: 600px) {
+
+@include tablet {
 .archive .entry-content p, .blog .entry-content p, .single .entry-content p {
 	font-size: 2.5rem;
 }

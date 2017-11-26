@@ -132,6 +132,7 @@ a {
 		width: 50%;
 	}
 }
+@include tablet {
 .site-info {
 	ul {
 		display: flex;
@@ -149,4 +150,5 @@ a {
 		text-decoration: none;
 		}
 	}
+}
 }

@@ -492,27 +492,28 @@ a {
   text-align: right;
   width: 50%; }
 
-.site-info ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  list-style-type: none;
-  margin-top: 5rem; }
-  .site-info ul li {
-    border-right: 1px solid #fff;
-    line-height: 1rem;
-    padding: 0 1rem; }
-  .site-info ul a {
-    text-decoration: none; }
+@media (min-width: 620px) {
+  .site-info ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    list-style-type: none;
+    margin-top: 5rem; }
+    .site-info ul li {
+      border-right: 1px solid #fff;
+      line-height: 1rem;
+      padding: 0 1rem; }
+    .site-info ul a {
+      text-decoration: none; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -574,7 +575,7 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@media (min-width: 600px) {
+@media (min-width: 620px) {
   .site-content {
     margin: 4.5rem 175px 1.5rem;
     position: relative; }
@@ -624,7 +625,7 @@ a {
           justify-content: center;
   margin-top: 2.5rem; }
 
-@media (min-width: 600px) {
+@media (min-width: 620px) {
   .archive .entry-content p, .blog .entry-content p, .single .entry-content p {
     font-size: 2.5rem; } }
 
