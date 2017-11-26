@@ -24,37 +24,36 @@
   });
 
   //submit a quote
-  $('#submit-quote').on('click', function (e) {
-
+  $('#quote-submission-form').on('submit', function (e) {
     e.preventDefault();
 
-    var quoteAuthor = $('#quote-author').val();
-    var quoteContent = $('#quote-content').val();
-    var quoteSource = $('#quote-source').val();
-    var quoteSourceUrl = $('#quote-source-url').val();
+    var title = $('#quote-author').val(),
+      content = $('#quote-content').val(),
+      quoteSource = $('#quote-source').val(),
+      quoteSourceUrl = $('#quote-source-url').val();
+
+    var data = {
+      title: title,
+      content: content,
+      _qod_quote_source: quoteSource,
+      _qod_quote_source_url: quoteSourceUrl,
+      post_status: 'pending'
+    };
 
     $.ajax({
-      method: 'POST',
+      method: 'post',
       url: api_vars.root_url + 'wp/v2/posts',
-      data: {
-        title: quoteAuthor,
-        content: quoteContent,
-        _qod_quote_source: quoteSource,
-        _qod_quote_source_url: quoteSourceUrl,
-        status: 'draft'
-      },
-
+      data: data,
       beforeSend: function (xhr) {
         xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce);
       }
-
     }).done(function () {
-
-
-    }).always(function () {
-      $('#quote-submission-form').trigger('reset');
+      $('#quote-submission-form').slideUp();
+      $('.submit-success-message').text(api_vars.success).slideDown();
+    }).fail(function () {
+      alert(api_vars.failure);
     });
 
   });
 
-})(jQuery)
+}(jQuery));

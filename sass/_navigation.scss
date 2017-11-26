@@ -140,13 +140,13 @@ a {
 		flex-wrap: wrap;
 		list-style-type: none;
 		margin-top: 5rem;
-		li:nth-of-type(4) {
-			border: none;
-		}
 		li {
 			border-right: 1px solid #fff;
 			line-height: 1rem;
 			padding: 0 1rem;
+		}
+		li:nth-of-type(4) {
+			border: none;
 		}
 		a {
 		text-decoration: none;

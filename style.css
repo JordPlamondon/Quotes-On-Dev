@@ -197,7 +197,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid #00cc00;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -504,12 +504,12 @@ a {
       flex-wrap: wrap;
   list-style-type: none;
   margin-top: 5rem; }
-  .site-info ul li:nth-of-type(4) {
-    border: none; }
   .site-info ul li {
     border-right: 1px solid #fff;
     line-height: 1rem;
     padding: 0 1rem; }
+  .site-info ul li:nth-of-type(4) {
+    border: none; }
   .site-info ul a {
     text-decoration: none; }
 
