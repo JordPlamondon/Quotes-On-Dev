@@ -14,7 +14,6 @@ get_header(); ?>
         <label for="quote-author">Author of Quote</label>
         <input type="text" name="quote_author" id="quote-author" >
       </div>
-      <!-- var quoteAuthor = $('#quote-author').val(); -->
       <div>
         <label for="quote-content">Quote</label>
         <textarea rows="3" cols="20" name="quote_content" id="quote-content" ></textarea>
@@ -32,7 +31,7 @@ get_header(); ?>
       <p class="submit-success-message" style></p>
     </div>
     <?php else:?>
-      <p>none shall post!</p>
+      <p>Sorry, you must be logged in to submit a quote!</p>
       <p><?php echo sprintf('<a href= "%1s">%2s</a>',
       esc_url( wp_login_url()) , 'Click here to login.' );?></p>
     <?php endif;?>

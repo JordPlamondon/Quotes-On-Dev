@@ -593,11 +593,11 @@ a {
     margin: 4.5rem 175px 1.5rem;
     position: relative; }
     .site-content:before, .site-content:after {
+      position: absolute;
       color: #00cc00;
       font-family: 'FontAwesome';
       font-size: 125px;
       line-height: 125px;
-      position: absolute;
       top: 0; }
     .site-content:before {
       content: '\f10d';
@@ -674,6 +674,16 @@ label {
 
 .archive .hentry {
   border-bottom: 1px dotted #fff; }
+
+.entry-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .entry-meta .source {
+    margin-left: 10px; }
 
 /*--------------------------------------------------------------
 # Media
