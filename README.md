@@ -1,3 +1,6 @@
+<img width="1272" alt="screen shot 2017-12-14 at 12 10 37 am" src="https://user-images.githubusercontent.com/32422707/33981868-5e07586a-e063-11e7-8952-ea1710ce466e.png">
+
+
 # Quotes on Dev Starter
 
 A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
